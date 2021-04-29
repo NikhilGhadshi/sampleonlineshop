@@ -2,7 +2,7 @@
 
 session_start();
 if(!isset($_SESSION["uid"])){
-	header("location:index.php");
+	header('location:index.php');
 }
 
 if (isset($_GET["st"])) {
@@ -18,7 +18,7 @@ if (isset($_GET["st"])) {
 
 		
 
-		include_once("db.php");
+		include_once('db.php');
 		$sql = "SELECT p_id,qty FROM cart WHERE user_id = '$cm_user_id'";
 		$query = mysqli_query($con,$sql);
 		if (mysqli_num_rows($query) > 0) {
@@ -91,7 +91,7 @@ if (isset($_GET["st"])) {
 				<?php
 			}
 		}else{
-			header("location:index.php");
+			header('location:index.php');
 		}
 		
 	}
@@ -100,52 +100,3 @@ if (isset($_GET["st"])) {
 
 
 ?>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
