@@ -1,7 +1,7 @@
 <?php
-include "db.php";
+include'db.php';
 
-include "header.php";
+include'header.php';
 
 
                          
@@ -312,5 +312,5 @@ span.price {
 		</div>
 		
 <?php
-include "footer.php";
+include'footer.php';
 ?>
