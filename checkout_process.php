@@ -1,6 +1,6 @@
 <?php
 session_start();
-include "db.php";
+include'db.php';
 if (isset($_SESSION["uid"])) {
 
 	$f_name = $_POST["firstname"];
@@ -82,8 +82,4 @@ if (isset($_SESSION["uid"])) {
     echo"<script>window.location.href='index.php'</script>";
 }
 	
-
-
-
-
 ?>
