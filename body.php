@@ -139,10 +139,9 @@
 									<div class="products-slick" data-nav="#slick-nav-1" >
 									
 									<?php
-                    include'db.php';
+										include'db.php';
 								
-                    
-					$product_query = "SELECT * FROM products,categories WHERE product_cat=cat_id AND product_id BETWEEN 70 AND 75";
+		$product_query = "SELECT * FROM products,categories WHERE product_cat=cat_id AND product_id BETWEEN 70 AND 75";
                 $run_query = mysqli_query($con,$product_query);
                 if(mysqli_num_rows($run_query) > 0){
 
@@ -156,11 +155,7 @@
 
                         $cat_name = $row["cat_title"];
 
-                        echo "
-				
-                        
-                                
-								<div class='product'>
+                        echo "  					<div class='product'>
 									<a href='product.php?p=$pro_id'><div class='product-img'>
 										<img src='product_images/$pro_image' style='max-height: 170px;' alt=''>
 										<div class='product-label'>
@@ -256,7 +251,7 @@
 							</ul>
 							<h2 class="text-uppercase">hot deal this week</h2>
 							<p>New Collection Up to 50% OFF</p>
-							<a class="primary-btn cta-btn" href="store.php">Shop now</a>
+							<a class="primary-btn cta-btn" href='store.php'>Shop now</a>
 						</div>
 					</div>
 				</div>
@@ -299,14 +294,12 @@
 									<div class="products-slick" data-nav="#slick-nav-2">
 										<!-- product -->
 										<?php
-                    include'db.php';
-								
-                    
-					$product_query = "SELECT * FROM products,categories WHERE product_cat=cat_id AND product_id BETWEEN 59 AND 65";
-                $run_query = mysqli_query($con,$product_query);
-                if(mysqli_num_rows($run_query) > 0){
+                    	include'db.php';
+			$product_query = "SELECT * FROM products,categories WHERE product_cat=cat_id AND product_id BETWEEN 59 AND 65";
+                	$run_query = mysqli_query($con,$product_query);
+                	if(mysqli_num_rows($run_query) > 0){
 
-                    while($row = mysqli_fetch_array($run_query)){
+                    	while($row = mysqli_fetch_array($run_query)){
                         $pro_id    = $row['product_id'];
                         $pro_cat   = $row['product_cat'];
                         $pro_brand = $row['product_brand'];
@@ -316,11 +309,7 @@
 
                         $cat_name = $row["cat_title"];
 
-                        echo "
-				
-                        
-                                
-								<div class='product'>
+                        echo " <div class='product'>
 									<a href='product.php?p=$pro_id'><div class='product-img'>
 										<img src='product_images/$pro_image' style='max-height: 170px;' alt=''>
 										<div class='product-label'>
@@ -349,9 +338,6 @@
 										<button pid='$pro_id' id='product' class='add-to-cart-btn block2-btn-towishlist' href='#'><i class='fa fa-shopping-cart'></i> add to cart</button>
 									</div>
 								</div>
-                               
-							
-                        
 			";
 		}
         ;
