@@ -36,7 +36,7 @@
 							<div class="footer">
 								<h3 class="footer-title">Admin Login</h3>
 								<ul class="footer-links">
-									<li><a href="admin/index.php">Dashboard</a></li>
+									<li><a href="#">Dashboard</a></li>
 									
 								</ul>
 							</div>
