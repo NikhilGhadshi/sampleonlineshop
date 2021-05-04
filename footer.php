@@ -34,13 +34,10 @@
 
 						<div class="col-md-3 col-xs-6">
 							<div class="footer">
-								<h3 class="footer-title">Categories</h3>
+								<h3 class="footer-title">Admin Login</h3>
 								<ul class="footer-links">
-									<li><a href="#">Mobiles</a></li>
-									<li><a href="#">Men</a></li>
-									<li><a href="#">Women</a></li>
-									<li><a href="#">Kids</a></li>
-									<li><a href="#">Accessories</a></li>
+									<li><a href="admin/index.php">Dashboard</a></li>
+									
 								</ul>
 							</div>
 						</div>
