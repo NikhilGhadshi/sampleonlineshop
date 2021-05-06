@@ -51,18 +51,7 @@
             
           </li>
           
-          <li class="nav-item ">
-            <a class="nav-link" href="orders.php">
-              <i class="material-icons">library_books</i>
-              <p>Orders</p>
-            </a>
-          </li>
-          <li class="nav-item ">
-            <a class="nav-link" href="addproduct.php">
-              <i class="material-icons">add</i>
-              <p>Add Products</p>
-            </a>
-          </li>
+         
           <li class="nav-item ">
             <a class="nav-link" href="manageuser.php">
               <i class="material-icons">edit_user</i>
@@ -70,7 +59,7 @@
             </a>
           </li>
           <li class="nav-item ">
-            <a class="nav-link" href="index.php">
+            <a class="nav-link" href="./../index.php">
               <i class="material-icons">logout</i>
               <p>Logout</p>
             </a>
