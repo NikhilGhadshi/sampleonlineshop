@@ -75,6 +75,5 @@ if (isset($_POST["login_user_with_product"])) {
 					<!-- Order Details -->
 					
 					<!-- /Order Details -->
-				
-				<!-- /row -->
+								<!-- /row -->
 			</div>
